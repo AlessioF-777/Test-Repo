@@ -1,0 +1,2 @@
+FROM quay.io/alessiof777/httpd-alessio-ferrara:latest
+ADD index.html /var/www/html

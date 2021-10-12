@@ -1,0 +1,7 @@
+FROM	ubi8
+LABEL	description="Creazione di un'immagine personalizzata di Httpd"
+RUN	yum install -y httpd
+EXPOSE	80
+USER	root
+ENTRYPOINT	["/usr/sbin/httpd"]
+CMD	["-D", "FOREGROUND"]	
